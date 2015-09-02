@@ -14,4 +14,5 @@ apt-get update
 apt-get install neo4j
 
 sudo cp /vagrant/neo4j-server.properties /etc/neo4j/neo4j-server.properties
+sudo service neo4j-service restart
 
