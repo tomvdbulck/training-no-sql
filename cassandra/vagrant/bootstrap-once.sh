@@ -15,7 +15,7 @@ cd apache-cassandra-2.1.9
 sudo cp /vagrant/cassandra.yaml conf/cassandra.yaml
 
 # next create the data and log directories for Cassandra
-#sudo mkdir /var/lib/cassandra
-#sudo mkdir /var/log/cassandra
-#sudo chown -R $USER:$GROUP /var/lib/cassandra
-#sudo chown -R $USER:$GROUP /var/log/cassandra
+sudo mkdir /var/lib/cassandra
+sudo mkdir /var/log/cassandra
+sudo chown -R $USER:$GROUP /var/lib/cassandra
+sudo chown -R $USER:$GROUP /var/log/cassandra
