@@ -7,9 +7,9 @@ sudo apt-get update
 sudo apt-get install openjdk-7-jre-headless -y
 
 #install cassandra
-wget http://apache.mirrors.pair.com/cassandra/2.1.2/apache-cassandra-2.1.2-bin.tar.gz
-tar xvzf apache-cassandra-2.1.2-bin.tar.gz
-cd apache-cassandra-2.1.2
+wget http://apache.mirrors.pair.com/cassandra/2.1.9/apache-cassandra-2.1.9-bin.tar.gz
+tar xvzf apache-cassandra-2.1.9-bin.tar.gz
+cd apache-cassandra-2.1.9
 
 #copy config file
 sudo cp /vagrant/cassandra.yaml conf/cassandra.yaml
