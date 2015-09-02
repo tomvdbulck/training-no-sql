@@ -7,13 +7,12 @@ sudo apt-get update
 sudo apt-get install openjdk-7-jre-headless -y
 
 #install cassandra
-wget -o neo4j-community-2.2.5-unix.tar.gz http://neo4j.com/artifact.php?name=neo4j-community-2.2.5-unix.tar.gz
-tar xf neo4j-community-2.2.5-unix.tar.gz
-cd neo4j-community-2.2.5-unix
+wget http://neo4j.com/artifact.php?name=neo4j-community-2.2.5-unix.tar.gz
+tar -xf artifact.php?name=neo4j-community-2.2.5-unix.tar.gz
+cd neo4j-community-2.2.5
 
 
-# next create the data and log directories for Cassandra
-#sudo mkdir /var/lib/cassandra
-#sudo mkdir /var/log/cassandra
-#sudo chown -R $USER:$GROUP /var/lib/cassandra
-#sudo chown -R $USER:$GROUP /var/log/cassandra
+# next create the data and log directories for neo4j
+sudo mkdir /home/vagrant/neo4j-community-2.2.5/data/
+sudo chown -R $USER:$GROUP /home/vagrant/neo4j-community-2.2.5/data/
+
