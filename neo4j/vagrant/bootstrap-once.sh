@@ -6,13 +6,12 @@ sudo apt-get update
 # install java
 sudo apt-get install openjdk-7-jre-headless -y
 
-#install cassandra
-wget http://neo4j.com/artifact.php?name=neo4j-community-2.2.5-unix.tar.gz
-tar -xf artifact.php?name=neo4j-community-2.2.5-unix.tar.gz
-cd neo4j-community-2.2.5
+#install neo4j
+sudo -i
+wget -O - http://debian.neo4j.org/neotechnology.gpg.key | apt-key add -
+echo 'deb http://debian.neo4j.org/repo stable/' > /etc/apt/sources.list.d/neo4j.list
+apt-get update
+apt-get install neo4j
 
-
-# next create the data and log directories for neo4j
-sudo mkdir /home/vagrant/neo4j-community-2.2.5/data/
-sudo chown -R $USER:$GROUP /home/vagrant/neo4j-community-2.2.5/data/
+sudo cp /vagrant/neo4j-server.properties /etc/neo4j/neo4j-server.properties
 
