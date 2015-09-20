@@ -2,4 +2,4 @@
 
 # start cassandra
 cd apache-cassandra-2.1.9
-bin/cassandra
+sudo bin/cassandra

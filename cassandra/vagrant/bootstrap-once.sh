@@ -12,7 +12,7 @@ tar xvzf apache-cassandra-2.1.9-bin.tar.gz
 cd apache-cassandra-2.1.9
 
 #copy config file
-sudo cp /vagrant/cassandra.yaml conf/cassandra.yaml
+#sudo cp /vagrant/cassandra.yaml conf/cassandra.yaml
 
 # next create the data and log directories for Cassandra
 sudo mkdir /var/lib/cassandra
